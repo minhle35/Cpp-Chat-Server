@@ -16,8 +16,9 @@ This is a real-time chat server in C++20 with JavaScript frontend, developed by 
 - Configure IDE/editor with C++ language server
 
 ### 1.2 Project Structure
+```
 cpp_chat_server/
-├——src/
+├── src/
 │   ├── core/           # Main server logic
 │   ├── networking/     # WebSocket handling
 │   ├── database/       # PostgreSQL integration
@@ -27,8 +28,9 @@ cpp_chat_server/
 │   └── main.cpp
 ├── include/            # Public headers
 ├── tests/             # Unit and integration tests
-├── frontend/          # Frontend Javascript
+├── frontend/          # JavaScript client
 ├── config/            # Configuration files
 ├── docker/            # Docker setup
 ├── docs/              # Documentation
 └── CMakeLists.txt
+```
