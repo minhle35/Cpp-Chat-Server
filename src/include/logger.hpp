@@ -4,6 +4,8 @@
 #include <string>
 #include <chrono>
 #include <iomanip>
+#include <fstream>
+#include <filesystem>
 
 namespace ChatServer {
 
@@ -16,10 +18,10 @@ public:
 
 private:
     static std::string getTimestamp();
+    static std::string getLogFilename();
     static void log(const std::string& level, const std::string& message);
 };
 
-// Simple macros for easy logging
 #define LOG_INFO(msg) ChatServer::Logger::info(msg)
 #define LOG_DEBUG(msg) ChatServer::Logger::debug(msg)
 #define LOG_WARN(msg) ChatServer::Logger::warn(msg)
